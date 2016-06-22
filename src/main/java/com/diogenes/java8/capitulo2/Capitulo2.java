@@ -1,7 +1,5 @@
 package com.diogenes.java8.capitulo2;
 
-import com.diogenes.java8.Usuario;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;

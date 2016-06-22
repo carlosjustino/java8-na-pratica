@@ -1,4 +1,4 @@
-package com.diogenes.java8;
+package com.diogenes.java8.capitulo2;
 
 /**
  * Created by diogenes on 21/06/16.
