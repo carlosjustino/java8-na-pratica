@@ -7,10 +7,7 @@ import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -64,6 +61,11 @@ public class Capitulo9 {
                 .filter(u -> u.getPontos() > 100)
                 .sorted(Comparator.comparing(Usuario::getNome))
                 .collect(Collectors.toList());
+
+
+        //Stream paralelo faz uso do Spliterator e API Fork/Join
+
+        Spliterator<Usuario> spliterator = usuarios.spliterator();
 
     }
 
