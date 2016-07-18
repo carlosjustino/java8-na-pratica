@@ -9,9 +9,19 @@ public class Usuario {
     private int pontos;
     private boolean moderador;
 
+    public Usuario() {
+
+    }
+
     public Usuario(String nome, int pontos) {
         this.nome = nome;
         this.pontos = pontos;
+    }
+
+    public Usuario(String nome, int pontos, boolean isModerador) {
+        this.nome = nome;
+        this.pontos = pontos;
+        this.moderador = isModerador;
     }
 
     public String getNome() {
